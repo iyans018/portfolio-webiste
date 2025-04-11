@@ -3,6 +3,7 @@
 import * as React from "react";
 import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 import { docsConfig } from "@/config/docs";
 import { cn } from "@/lib/utils";
@@ -19,6 +20,9 @@ import { siteConfig } from "@/config/site";
 import { Icons } from "./icons";
 
 export function MobileNav() {
+  const pathname = usePathname()
+  const sideNav = pathname === '/blog' ? docsConfig.blogSideNav : docsConfig.homeSideNav
+
   const [open, setOpen] = React.useState(false);
   const { setMetaColor, metaColor } = useMetaColor();
 
@@ -61,7 +65,7 @@ export function MobileNav() {
         <DrawerContent className="max-h-[80svh] p-0">
           <div className="p-6 overflow-auto">
             <div className="flex items-center justify-between gap-2 my-6">
-              <h4 className="text-xl font-medium">Abhishek Ghimire</h4>
+              <h4 className="text-xl font-medium">Oktavian Aji</h4>
               <div className="flex items-center justify-center gap-4">
                 <ModeSwitcher className="size-6" />
                 <Link
@@ -89,7 +93,7 @@ export function MobileNav() {
               )}
             </div>
             <div className="flex flex-col space-y-2">
-              {docsConfig.sidebarNav.map((item, index) => (
+              {sideNav.map((item, index) => (
                 <div key={index} className="flex flex-col gap-4 pt-6">
                   <h4 className="text-xl font-medium">{item.title}</h4>
                   {item?.items?.length &&

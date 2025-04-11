@@ -5,7 +5,6 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useActionState, useEffect, useState, Suspense } from "react";
 import { toast } from "sonner";
-import { sendMessageServerAction } from "../actions/sendMailServerAction";
 
 const labelWithRequiredStar = ({ label }: { label: string }) => {
   return (
@@ -19,30 +18,14 @@ const labelWithRequiredStar = ({ label }: { label: string }) => {
 };
 
 const ContactForm = () => {
-  const [state, action, isPending] = useActionState(
-    sendMessageServerAction,
-    null
-  );
   const [formData, setFormData] = useState({
     fullname: "",
     email: "",
     message: "",
   });
 
-  useEffect(() => {
-    if (state?.success) {
-      toast.success(state.success);
-      setFormData({ fullname: "", email: "", message: "" });
-    }
-  }, [state?.success]);
-
-  useEffect(() => {
-    if (state?.error) {
-      toast.error(state.error);
-    }
-  }, [state?.error]);
   return (
-    <form action={action} className="space-y-6">
+    <form className="space-y-6">
       <div className="space-y-4">
         {labelWithRequiredStar({ label: "Name" })}
         <div className="space-y-1">
@@ -58,9 +41,7 @@ const ContactForm = () => {
               setFormData({ ...formData, fullname: e.target.value })
             }
           />
-          {state?.fullnameError && (
-            <span className="text-sm text-red-500">{state.fullnameError}</span>
-          )}
+            <span className="text-sm text-red-500">Testing</span>
         </div>
       </div>
       <div className="space-y-4">
@@ -81,9 +62,6 @@ const ContactForm = () => {
           <span className="text-sm text-muted-foreground">
             Temporary emails are also accepted, unless you wish to hear back 😉
           </span>
-          {state?.emailError && (
-            <span className="text-sm text-red-500">{state.emailError}</span>
-          )}
         </div>
       </div>
       <div className="space-y-4">
@@ -100,9 +78,6 @@ const ContactForm = () => {
               setFormData({ ...formData, message: e.target.value })
             }
           />
-          {state?.messageError && (
-            <span className="text-sm text-red-500">{state.messageError}</span>
-          )}
         </div>
       </div>
 
@@ -112,9 +87,8 @@ const ContactForm = () => {
           className="w-full px-8 py-6 cursor-pointer"
           size="lg"
           variant="default"
-          disabled={isPending}
         >
-          {isPending ? "Transporting your message to my inbox... 📨" : "Submit"}
+          "Submit"
         </Button>
 
         <Button

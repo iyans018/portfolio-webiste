@@ -9,9 +9,10 @@ export const docsConfig = {
       href: "/blog",
     },
   ],
-  sidebarNav: [
+  homeSideNav: [
     {
       title: "Sections",
+      label: "Home",
       items: [
         {
           title: "Introduction",
@@ -43,11 +44,6 @@ export const docsConfig = {
           href: "/education",
           items: [],
         },
-        // {
-        //   title: "Testimonials",
-        //   href: "/testimonials",
-        //   items: [],
-        // },
         {
           title: "Contact",
           href: "/contact",
@@ -61,4 +57,27 @@ export const docsConfig = {
       ],
     },
   ],
+  blogSideNav: [
+    {
+      title: "Categories",
+      label: "Blog",
+      items: [
+        {
+          title: "Philosophy",
+          href: "/philosophy",
+          items: []
+        },
+        {
+          title: "Tech",
+          href: "/tech",
+          items: []
+        },
+        {
+          title: "Self Improvement",
+          href: "self-improvement",
+          items: []
+        }
+      ]
+    }
+  ]
 };

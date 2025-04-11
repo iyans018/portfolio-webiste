@@ -3,11 +3,13 @@ export const code = {
 import { NextResponse } from "next/server";
 
 export async function GET() {
-  return NextResponse.json({ message: "Welcome to my portfolio!" });
+  return NextResponse.json({ 
+    message: "Hey there, curious mind! Welcome to my little corner of the web — where backend meets bold ideas!" 
+  });
 }
 `,
 
-  aboutMe: `const superpower = () => "Writing clean, efficient, and user-friendly code!";
+  aboutMe: `const superpower = () => "Building clean, scalable backend systems with real impact!";
 console.log(\`My superpower is: \${superpower()}\`);
 `,
 
@@ -27,12 +29,12 @@ console.log(getSkills());
 `,
 
   contact: `const contactDetails = {
-    name: "Abhishek Ghimire",
-    email: "hi@abhishekg.com.np",
-    mobile: "+977-9847526298",
-    location: "Kathmandu, Nepal",
-    linkedIn: "linkedin.com/in/cypherab01",
-    github: "github.com/cypherab01",
+    name: "Oktavian Aji",
+    email: "oktavian.aji18@gmail.com",
+    mobile: "+62-896-4337-1072",
+    location: "Jakarta, Indonesia",
+    linkedIn: "linkedin.com/in/oktavian-aji-3a43b0216/",
+    github: "github.com/iyans018",
   };
   
 function reachOut() {

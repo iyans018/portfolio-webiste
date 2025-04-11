@@ -10,33 +10,31 @@ import { SiteHeader } from "@/components/site-header";
 import { SideNav } from "@/components/side-nav";
 import { SiteFooter } from "@/components/site-footer";
 import { docsConfig } from "@/config/docs";
-import { setViewsServerAction } from "./actions/getAndSetViewsServerAction";
-import { getLoveCountServerAction } from "./actions/getAndSetLoveCountServerAction";
 
 export const metadata: Metadata = {
   title: siteConfig.name,
   description: siteConfig.description,
   metadataBase: new URL(siteConfig.url),
   keywords: [
-    "Abhishek Ghimire",
-    "Abhishek G",
-    "abhishekg.com.np",
-    "Abhishek Ghimire Portfolio",
-    "Abhishek Ghimire Projects",
-    "Abhishek Ghimire Skills",
-    "Abhishek Ghimire Experience",
-    "Abhishek Ghimire Education",
-    "Abhishek Ghimire Contact",
-    "Abhishek Ghimire Blog",
-    "Abhishek Ghimire Resume",
+    "Oktavian Aji",
+    "Oktavian A",
+    "oktavianaji.xyz",
+    "Oktavian Aji Portfolio",
+    "Oktavian Aji Projects",
+    "Oktavian Aji Skills",
+    "Oktavian Aji Experience",
+    "Oktavian Aji Education",
+    "Oktavian Aji Contact",
+    "Oktavian Aji Blog",
+    "Oktavian Aji Resume",
   ],
   authors: [
     {
-      name: "Abhishek Ghimire",
-      url: "https://abhishekg.com.np",
+      name: "Oktavian Aji",
+      url: "https://oktavianaji.xyz",
     },
   ],
-  creator: "Abhishek Ghimire",
+  creator: "Oktavian Aji",
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -58,7 +56,7 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     images: [siteConfig.ogImage],
-    creator: "@cypherab01",
+    creator: "@iyans018",
   },
   icons: {
     icon: "/favicon.ico",
@@ -76,18 +74,7 @@ interface RootLayoutProps {
   children: React.ReactNode;
 }
 
-async function loadStats() {
-  try {
-    await setViewsServerAction();
-    await getLoveCountServerAction();
-  } catch (error) {
-    console.error("Failed to load stats:", error);
-    return;
-  }
-}
-
 export default async function RootLayout({ children }: RootLayoutProps) {
-  await loadStats();
   return (
     <>
       <html lang="en" suppressHydrationWarning>

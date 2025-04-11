@@ -1,19 +1,19 @@
 import { title } from "process";
 
 export const siteConfig = {
-  name: "abhishekg.com.np",
-  url: "https://abhishekg.com.np",
-  ogImage: "https://abhishekg.com.np/og.jpg",
-  description: "Portfolio of Abhishek Ghimire",
+  name: "oktavianaji.xyz",
+  url: "https://oktavianaji.xyz",
+  ogImage: "https://oktavianaji.xyz/og.jpg",
+  description: "Portfolio of Oktavian Aji",
   links: {
     shadcn: "https://ui.shadcn.com/",
-    telegram: "https://t.me/cypherab01",
-    twitter: "https://x.com/cypherab01",
-    github: "https://github.com/cypherab01/abhishekg.com.np",
-    githubProfile: "https://github.com/cypherab01",
+    telegram: "https://t.me/iyans018",
+    twitter: "https://x.com/iyans018",
+    github: "https://github.com/iyans018/portfolio-web-fe",
+    githubProfile: "https://github.com/iyans018",
     resume: "https://www.overleaf.com/read/pwbbqtpthxxr#946f81",
     email: "mailto:hi@abhishekg.com.np",
-    githubUsername: "cypherab01",
+    githubUsername: "iyans018",
   },
   bitinfonepal: "https://bitinfonepal.com",
   projects: {

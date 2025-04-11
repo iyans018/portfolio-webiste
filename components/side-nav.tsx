@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 export function SideNav({ config }: any) {
   const pathname = usePathname();
 
-  const items = config.sidebarNav;
+  const items = pathname === '/blog' ? config.blogSideNav : config.homeSideNav;
 
   return items.length ? (
     <div className="flex flex-col gap-6">
