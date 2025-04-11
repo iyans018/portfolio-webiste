@@ -1,11 +1,9 @@
-import CodeSnippet from "@/components/code-snippet";
 import {
   PageHeader,
   PageHeaderDescription,
   PageHeaderHeading,
 } from "@/components/page-header";
 import Pager from "@/components/pager";
-import { code } from "@/config/codeContent";
 
 const AboutMePage = () => {
   return (

@@ -1,4 +1,3 @@
-import CodeSnippet from "@/components/code-snippet";
 import { Icons } from "@/components/icons";
 import {
   PageHeader,
@@ -7,7 +6,6 @@ import {
 } from "@/components/page-header";
 import Pager from "@/components/pager";
 import { Badge } from "@/components/ui/badge";
-import { code } from "@/config/codeContent";
 import { mySkills } from "@/constants";
 
 const SkillsToolsPage = () => {

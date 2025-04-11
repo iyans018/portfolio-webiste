@@ -1,4 +1,3 @@
-import CodeSnippet from "@/components/code-snippet";
 import { PageHeader } from "@/components/page-header";
 import { PageHeaderHeading } from "@/components/page-header";
 import Pager from "@/components/pager";
@@ -11,7 +10,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { code } from "@/config/codeContent";
 import { siteConfig } from "@/config/site";
 import Link from "next/link";
 
