@@ -11,34 +11,29 @@ const AboutMePage = () => {
   return (
     <>
       <PageHeader>
-        <PageHeaderHeading>About Abhishek</PageHeaderHeading>
+        <PageHeaderHeading>About Oktavian</PageHeaderHeading>
         <PageHeaderHeading className="mt-2 text-muted-foreground">
-          More than just a title—let’s dive deeper!
+          Code with clarity, build with purpose
         </PageHeaderHeading>
         <PageHeaderDescription>
-          I am a passionate Software Engineer with a knack for building
-          full-stack web applications using modern technologies like Next.js and
-          Tailwind CSS. My journey in tech began with a curiosity for solving
-          real-world problems through innovative solutions, which evolved into a
-          love for crafting user-centric digital experiences.
+          I'm a backend developer who enjoys the grind of becoming better at programming. 
+          Beyond writing code, I’m passionate about contributing to impactful projects and 
+          getting involved in the planning and building process — even if my title doesn't always 
+          say "lead", my mindset is always proactive.
         </PageHeaderDescription>
 
         <PageHeaderDescription>
-          With a strong foundation in JavaScript frameworks, I focus on creating
-          scalable, efficient, and visually appealing applications. Currently, I
-          am diving deeper into mobile development with React Native and Expo to
-          expand my skill set and deliver versatile, cross-platform solutions.
+          I stay curious and committed to learning — exploring Go, Next.js, Redis, RabbitMQ, 
+          Cloud Computing, system design, and more. I believe in understanding the bigger 
+          picture of every project, because sense of ownership makes all the difference.
         </PageHeaderDescription>
 
         <PageHeaderDescription>
-          Beyond coding, I thrive in collaborative environments and enjoy
-          tackling challenging problems with creative solutions. I aim to
-          contribute to impactful projects that make a difference in users'
-          lives.
+          Currently, I’m also learning leadership and business strategy, with the goal of 
+          turning ideas into digital products, building a strong team, and securing funding 
+          to grow them.
         </PageHeaderDescription>
       </PageHeader>
-
-      <CodeSnippet title="aboutMe.ts" code={code.aboutMe} />
 
       <Pager
         prevHref="/"

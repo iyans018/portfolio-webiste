@@ -16,17 +16,14 @@ const IntroductionPage = async () => {
   return (
     <>
       <PageHeader>
-        <PageHeaderHeading>Abhishek Ghimire</PageHeaderHeading>
+        <PageHeaderHeading>Oktavian Aji</PageHeaderHeading>
         <PageHeaderHeading className="mt-2 text-muted-foreground">
-          A coder by day, problem-solver by night!
+          Code with clarity, build with purpose
         </PageHeaderHeading>
         <PageHeaderDescription>
-          I am a dedicated Software Engineer specializing in full-stack
-          application development. I enjoy crafting responsive web solutions
-          using modern technologies like Next.js, React, and Tailwind CSS.
-          Currently, I am expanding my skills into mobile development with React
-          Native and Expo, aiming to deliver comprehensive, user-centric
-          software solutions.
+          I’m Oktavian a software engineer with a hunger to grow beyond code. 
+          From backend engineering to pitching startup ideas, I’m learning to 
+          lead and create meaningful impact.
         </PageHeaderDescription>
         <PageActions>
           <Button asChild size="sm" className="rounded-md">
@@ -43,8 +40,6 @@ const IntroductionPage = async () => {
           </Button>
         </PageActions>
       </PageHeader>
-
-      <CodeSnippet title="welcome.ts" code={code.welcome} />
 
       <Pager
         prevHref="/"

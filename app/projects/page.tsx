@@ -65,8 +65,6 @@ const ProjectsPage = () => {
         ))}
       </div>
 
-      <CodeSnippet code={code.projects} title="projects.ts" />
-
       <Pager
         prevHref="/about"
         nextHref="/skills-tools"

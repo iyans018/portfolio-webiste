@@ -84,8 +84,6 @@ const ExperiencePage = () => {
         </li>
       </ol>
 
-      <CodeSnippet code={code.experience} title="experience.ts" />
-
       <Pager
         prevHref="/skills-tools"
         nextHref="/education"

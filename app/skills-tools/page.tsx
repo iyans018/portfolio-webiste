@@ -16,13 +16,20 @@ const SkillsToolsPage = () => {
       <PageHeader>
         <PageHeaderHeading>Skills & Tools</PageHeaderHeading>
         <PageHeaderHeading className="mt-2 text-muted-foreground">
-          Learned by coding all night and debugging all day!
+          From backend logic to product vision — I build with clarity, adapt with curiosity.
         </PageHeaderHeading>
         <PageHeaderDescription>
-          As a full-stack Software Engineer, I specialize in building scalable
-          web applications using modern technologies such as Next.js, React, and
-          Tailwind CSS. I'm also expanding my expertise into mobile development
-          with React Native and Expo to create cross-platform solutions.
+          I’m a backend-focused software developer with a sharp eye on system design, 
+          performance optimization, and architectural patterns. My technical journey is 
+          grounded in strong fundamentals, but driven by curiosity to explore beyond — 
+          from cloud-native tools to modern frontend frameworks. I enjoy learning new 
+          technologies, exploring unfamiliar stacks, and integrating them into real-world 
+          solutions.
+        </PageHeaderDescription>
+        <PageHeaderDescription>
+          Beyond coding, I have a growing passion for product thinking and leadership. 
+          I strive to understand the big picture, connect technical decisions with business 
+          impact, and contribute meaningfully — whether as an engineer, a planner, or a future founder.
         </PageHeaderDescription>
       </PageHeader>
 
@@ -44,8 +51,6 @@ const SkillsToolsPage = () => {
           </Badge>
         ))}
       </div>
-
-      <CodeSnippet title="skills.ts" code={code.skillsTools} />
 
       <Pager
         prevHref="/projects"

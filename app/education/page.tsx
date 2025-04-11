@@ -134,8 +134,6 @@ const EducationPage = () => {
         </li>
       </ol>
 
-      <CodeSnippet code={code.educationJourney} title="educationJourney.ts" />
-
       <Pager
         prevHref="/experience"
         nextHref="/contact"
