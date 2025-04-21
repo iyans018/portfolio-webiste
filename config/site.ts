@@ -12,7 +12,7 @@ export const siteConfig = {
     github: "https://github.com/iyans018/portfolio-web-fe",
     githubProfile: "https://github.com/iyans018",
     resume: "https://www.overleaf.com/read/pwbbqtpthxxr#946f81",
-    email: "mailto:hi@abhishekg.com.np",
+    email: "mailto:oktavian.aji18@gmail.com",
     githubUsername: "iyans018",
   },
   bitinfonepal: "https://bitinfonepal.com",

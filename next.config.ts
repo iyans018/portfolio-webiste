@@ -7,6 +7,11 @@ const nextConfig: NextConfig = {
         hostname: "avatars.githubusercontent.com",
       },
     ],
+    domains: [
+      'mojokertokab.go.id',
+      'thumb.viva.id',
+      'images.unsplash.com'
+    ]
   },
 };
 

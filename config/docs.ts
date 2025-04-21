@@ -48,12 +48,7 @@ export const docsConfig = {
           title: "Contact",
           href: "/contact",
           items: [],
-        },
-        {
-          title: "Stats",
-          href: "/stats",
-          items: [],
-        },
+        }
       ],
     },
   ],
@@ -77,6 +72,21 @@ export const docsConfig = {
           href: "self-improvement",
           items: []
         }
+      ]
+    },
+    {
+      title: "Chart",
+      items: [
+        {
+          title: "Latest",
+          href: "/philosophy",
+          items: []
+        },
+        {
+          title: "Popular",
+          href: "/tech",
+          items: []
+        },
       ]
     }
   ]
