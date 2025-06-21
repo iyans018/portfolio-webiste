@@ -14,22 +14,19 @@ const AboutMePage = () => {
           Code with clarity, build with purpose
         </PageHeaderHeading>
         <PageHeaderDescription>
-          I'm a backend developer who enjoys the grind of becoming better at programming. 
-          Beyond writing code, I’m passionate about contributing to impactful projects and 
-          getting involved in the planning and building process — even if my title doesn't always 
-          say "lead", my mindset is always proactive.
+          I'm a backend developer based in Indonesia with a focus on Python and Node.js. I specialize in designing scalable REST APIs, 
+          optimizing relational databases, and integrating third-party services like Microsoft Graph and SharePoint. I’ve worked in highly 
+          structured enterprise environments, contributing to legal, HR, and procurement systems.
         </PageHeaderDescription>
 
         <PageHeaderDescription>
-          I stay curious and committed to learning — exploring Go, Next.js, Redis, RabbitMQ, 
-          Cloud Computing, system design, and more. I believe in understanding the bigger 
-          picture of every project, because sense of ownership makes all the difference.
+          Outside of engineering, I’m also passionate about writing. I use Medium to translate backend 
+          experience into technical articles, and I’m currently expanding into developer-focused ghostwriting.
         </PageHeaderDescription>
 
         <PageHeaderDescription>
-          Currently, I’m also learning leadership and business strategy, with the goal of 
-          turning ideas into digital products, building a strong team, and securing funding 
-          to grow them.
+          My long-term goal is to lead backend initiatives, build developer tools, and help more products 
+          communicate clearly and scale efficiently.
         </PageHeaderDescription>
       </PageHeader>
 
