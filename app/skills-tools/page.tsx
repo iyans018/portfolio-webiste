@@ -1,5 +1,31 @@
+import {
+  PageHeader,
+  PageHeaderDescription,
+  PageHeaderHeading,
+} from "@/components/page-header"
+import Pager from "@/components/pager"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
+import React from "react"
+
+interface SkillGroupProps {
+  title: string
+  items: string[]
+  colorClass: string
+}
+
+const SkillGroup: React.FC<SkillGroupProps> = ({ title, items, colorClass }) => (
+  <div className="space-y-4">
+    <h2 className="text-xl font-semibold">{title}</h2>
+    <div className="flex flex-wrap gap-2">
+      {items.map((item) => (
+        <Badge key={item} className={colorClass}>
+          {item}
+        </Badge>
+      ))}
+    </div>
+  </div>
+)
 
 const skills = {
   languages: ["Python", "JavaScript (Node.js)", "Go (Learning)", "SQL"],
@@ -15,8 +41,16 @@ const skills = {
   ],
   frontend: ["React.js", "Next.js", "Vue.js", "Nuxt.js", "Tailwind CSS"],
   devTools: ["Git & GitHub", "Docker", "PM2", "UWSGI", "NGINX", "VS Code"],
-  workflow: ["Microservices (Experimental)", "Pub/Sub Messaging", "System Design (Studying)"],
-  cloud: ["Microsoft SharePoint Integration", "Deployment to Linux VPS (manual)", "CDN Concepts (Studied)"],
+  workflow: [
+    "Microservices (Experimental)",
+    "Pub/Sub Messaging",
+    "System Design (Studying)",
+  ],
+  cloud: [
+    "Microsoft SharePoint Integration",
+    "Deployment to Linux VPS (manual)",
+    "CDN Concepts (Studied)",
+  ],
   softSkills: [
     "Technical Documentation Writing",
     "Journaling & Idea Development",
@@ -26,106 +60,82 @@ const skills = {
   ],
 }
 
-const sectionStyle = "space-y-4"
-
-export default function SkillsToolsPage() {
+const SkillsToolsPage: React.FC = () => {
   return (
-    <main className="max-w-4xl mx-auto px-4 py-12">
-      <h1 className="text-4xl font-bold mb-6">Skills & Tools</h1>
-      <p className="text-gray-600 mb-10 text-lg">
-        I’m a backend-focused software developer with a sharp eye on system design, performance
-        optimization, and architectural patterns. My technical journey is grounded in strong
-        fundamentals, but driven by curiosity to explore beyond — from cloud-native tools to modern
-        frontend frameworks. I enjoy learning new technologies, exploring unfamiliar stacks, and
-        integrating them into real-world solutions.
-      </p>
+    <>
+      <PageHeader className="mb-10">
+        <PageHeaderHeading>Skills & Tools</PageHeaderHeading>
+        <PageHeaderHeading className="mt-2 text-muted-foreground">
+          Versatile in the backend, curious beyond the stack.
+        </PageHeaderHeading>
+        <PageHeaderDescription>
+          I’m a backend-focused software developer with a sharp eye on system design,
+          performance optimization, and architectural patterns. My technical journey is
+          grounded in strong fundamentals, but driven by curiosity to explore beyond — from
+          cloud-native tools to modern frontend frameworks.
+        </PageHeaderDescription>
+        <PageHeaderDescription>
+          I enjoy learning new technologies, exploring unfamiliar stacks, and integrating
+          them into real-world solutions.
+        </PageHeaderDescription>
+      </PageHeader>
 
-      <div className="grid md:grid-cols-2 gap-10">
-        <div className={sectionStyle}>
-          <h2 className="text-xl font-semibold">Languages</h2>
-          <div className="flex flex-wrap gap-2">
-            {skills.languages.map((item) => (
-              <Badge key={item} className="bg-yellow-100 text-yellow-800">
-                {item}
-              </Badge>
-            ))}
-          </div>
-        </div>
-
-        <div className={sectionStyle}>
-          <h2 className="text-xl font-semibold">Backend & API</h2>
-          <div className="flex flex-wrap gap-2">
-            {skills.backend.map((item) => (
-              <Badge key={item} className="bg-blue-100 text-blue-800">
-                {item}
-              </Badge>
-            ))}
-          </div>
-        </div>
-
-        <div className={sectionStyle}>
-          <h2 className="text-xl font-semibold">Frontend (In Progress)</h2>
-          <div className="flex flex-wrap gap-2">
-            {skills.frontend.map((item) => (
-              <Badge key={item} className="bg-green-100 text-green-800">
-                {item}
-              </Badge>
-            ))}
-          </div>
-        </div>
-
-        <div className={sectionStyle}>
-          <h2 className="text-xl font-semibold">Dev Tools</h2>
-          <div className="flex flex-wrap gap-2">
-            {skills.devTools.map((item) => (
-              <Badge key={item} className="bg-gray-200 text-gray-800">
-                {item}
-              </Badge>
-            ))}
-          </div>
-        </div>
-
-        <div className={sectionStyle}>
-          <h2 className="text-xl font-semibold">Workflow & Architecture</h2>
-          <div className="flex flex-wrap gap-2">
-            {skills.workflow.map((item) => (
-              <Badge key={item} className="bg-purple-100 text-purple-800">
-                {item}
-              </Badge>
-            ))}
-          </div>
-        </div>
-
-        <div className={sectionStyle}>
-          <h2 className="text-xl font-semibold">Cloud & Integrations</h2>
-          <div className="flex flex-wrap gap-2">
-            {skills.cloud.map((item) => (
-              <Badge key={item} className="bg-sky-100 text-sky-800">
-                {item}
-              </Badge>
-            ))}
-          </div>
-        </div>
-
-        <div className="md:col-span-2 space-y-4">
-          <h2 className="text-xl font-semibold">Soft Skills & Others</h2>
-          <div className="flex flex-wrap gap-2">
-            {skills.softSkills.map((item) => (
-              <Badge key={item} className="bg-pink-100 text-pink-800">
-                {item}
-              </Badge>
-            ))}
-          </div>
+      <div className="grid md:grid-cols-2 gap-10 mb-10">
+        <SkillGroup
+          title="Languages"
+          items={skills.languages}
+          colorClass="bg-yellow-100 text-yellow-800"
+        />
+        <SkillGroup
+          title="Backend & API"
+          items={skills.backend}
+          colorClass="bg-blue-100 text-blue-800"
+        />
+        <SkillGroup
+          title="Frontend (In Progress)"
+          items={skills.frontend}
+          colorClass="bg-green-100 text-green-800"
+        />
+        <SkillGroup
+          title="Dev Tools"
+          items={skills.devTools}
+          colorClass="bg-gray-200 text-gray-800"
+        />
+        <SkillGroup
+          title="Workflow & Architecture"
+          items={skills.workflow}
+          colorClass="bg-purple-100 text-purple-800"
+        />
+        <SkillGroup
+          title="Cloud & Integrations"
+          items={skills.cloud}
+          colorClass="bg-sky-100 text-sky-800"
+        />
+        <div className="md:col-span-2">
+          <SkillGroup
+            title="Soft Skills & Others"
+            items={skills.softSkills}
+            colorClass="bg-pink-100 text-pink-800"
+          />
         </div>
       </div>
 
       <Separator className="my-10" />
 
-      <p className="text-gray-600 text-base">
+      <p className="text-muted-foreground text-base">
         Beyond coding, I have a growing passion for product thinking and leadership. I strive to
         understand the big picture, connect technical decisions with business impact, and contribute
         meaningfully — whether as an engineer, a planner, or a future founder.
       </p>
-    </main>
+
+      <Pager
+        prevHref="/projects"
+        nextHref="/experience"
+        prevTitle="Projects"
+        nextTitle="Experience"
+      />
+    </>
   )
-} 
+}
+
+export default SkillsToolsPage
