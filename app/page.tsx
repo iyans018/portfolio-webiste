@@ -16,12 +16,17 @@ const IntroductionPage = async () => {
       <PageHeader>
         <PageHeaderHeading>Oktavian Aji</PageHeaderHeading>
         <PageHeaderHeading className="mt-2 text-muted-foreground">
-          Code with clarity, build with purpose
+          Backend Engineer & Technical Writer
         </PageHeaderHeading>
         <PageHeaderDescription>
-          I’m Oktavian a software engineer with a hunger to grow beyond code. 
-          From backend engineering to pitching startup ideas, I’m learning to 
-          lead and create meaningful impact.
+          I help digital products, SaaS startups, and dev teams eliminate backend bottlenecks, 
+          automate internal processes, and communicate their technology through clear, 
+          developer-friendly writing. With over 3 years of experience, I bring both hands-on backend 
+          engineering skills and the ability to articulate complex systems into accessible content.
+        </PageHeaderDescription>
+        <PageHeaderDescription className="mt-2"> 
+          I’m currently available for freelance projects, consulting, and full-time opportunities.
+          Let’s build something that scales in logic, in clarity, and in impact.
         </PageHeaderDescription>
         <PageActions>
           <Button asChild size="sm" className="rounded-md">
