@@ -15,16 +15,12 @@ const ExperiencePage = () => {
       <PageHeader className="mb-10">
         <PageHeaderHeading>Experience</PageHeaderHeading>
         <PageHeaderHeading className="mt-2 text-muted-foreground">
-          You need it to get the job, but the job’s what gives it!
+          I don’t just write code, I solve invisible problems behind visible systems.
         </PageHeaderHeading>
         <PageHeaderDescription>
-          Throughout my journey as a developer, I have had the opportunity to
-          work with cutting-edge technologies while also mastering the fine art
-          of debugging at 2 AM. From building dynamic web applications to
-          deciphering cryptic error messages, my experience has been a mix of
-          structured learning and spontaneous problem-solving. Each project and
-          internship has sharpened my ability to write clean code, collaborate
-          effectively, and most importantly—fix bugs before they fix me.
+          Recently, I contributed to backends development of an enterprise-grade internal system with a highly relational and
+          domain-rich data model, covering areas such as procurement, legal, and HR. I contributed to both its architectural design
+          and technical documentation, ensuring the system was maintainable and easy to onboard.
         </PageHeaderDescription>
       </PageHeader>
 
@@ -42,18 +38,34 @@ const ExperiencePage = () => {
             </svg>
           </span>
           <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-            Next.js Developer Intern · Treeleaf Technologies
+            Mid Backend Developer · PT SIGMA CIPTA CARAKA (Telkomsigma)
             <span className="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-blue-900 dark:text-blue-300 ms-3">
               Latest
             </span>
           </h3>
           <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-            Jan. 2025 - Present
+            Nov 2022 – Present
           </time>
           <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-            Currently interning as a Next.js Developer at Treeleaf Technologies,
-            where I’m building and maintaining front-end components and learning
-            the ropes of modern web development.
+            Built, maintained, and optimized enterprise-grade backend systems for internal 
+            platforms used across legal, HR, procurement, and sales departments. 
+            I worked closely with cross-functional teams and handled core responsibilities 
+            across development, performance optimization, and documentation.
+          </p>
+          <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+            Developed legal contract approval system with Django, reducing processing time by 50%
+          </p>
+          <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+            Created partner data backend for sales ops; unified scattered data sources into a central system
+          </p>
+          <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+            Integrated Microsoft SharePoint with internal backend for seamless document handling
+          </p>
+          <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+            Refactored slow-performing APIs and introduced asynchronous workflows with Celery
+          </p>
+          <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+            Authored internal technical documentation and performed system handovers
           </p>
         </li>
         <li className="mb-10 ms-6">
@@ -69,15 +81,19 @@ const ExperiencePage = () => {
             </svg>
           </span>
           <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-            CloudWorker (Part-time) · CloudWorker
+            Full Stack Developer · Ravenry
           </h3>
           <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-            Dec. 2023 - Present
+            Sep 2021 - Feb 2022
           </time>
           <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-            Working as a part-time CloudWorker at CloudFactory, where I annotate
-            diverse datasets to support AI and machine learning projects while
-            honing my attention to detail and time management skills.
+            Collaborated in building and refining features across frontend and backend stacks. Worked in an agile team setup and contributed to improving product UI/UX, system integrations, and QA reliability.
+          </p>
+          <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+            Designed and implemented a pub/sub solution for service integration
+          </p>
+          <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+            Automated test coverage for core features using Cypress
           </p>
         </li>
       </ol>
