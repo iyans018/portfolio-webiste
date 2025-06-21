@@ -45,6 +45,16 @@ export const docsConfig = {
           items: [],
         },
         {
+          title: "Services",
+          href: "/services",
+          items: [],
+        },
+        {
+          title: "Testimonials",
+          href: "/testimonials",
+          items: [],
+        },
+        {
           title: "Contact",
           href: "/contact",
           items: [],
